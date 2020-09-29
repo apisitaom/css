@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background: #060c21;
+}
+.container {
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.container .box {
+  position: relative;
+  height: 400px;
+  background: #060c21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .container .box:before { */
+  /* content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px; */
+  /* background: #fff; */
+  /* transform: skew(2deg, 2deg); */
+  /* z-index: -1; */
+/* } */
+
+/* .container .box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: rgb(255, 255, 255, 0.05);
+  pointer-events: none;
+} */
+
+.content {
+  position: relative;
+  padding: 20px;
+  transform: translateY(40px);
+}
+
+.content h2 {
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: rgb(255, 255, 255 0.05);
+  transition: 0.5s;
+}
+
+.box:hover .content h2 {
+  top: -140px;
+}
+
+.box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.box .content h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.box .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.box .content a {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  display: inline-block;
+  color: #fff;
+  transition: 0.5s;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.box:hover .content a {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.box .content a:hover {
+  color: #000;
+  background: #fff;
 }

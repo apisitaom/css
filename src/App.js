@@ -1,25 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <div className="container">
+        <div className="box">
+          <div className="content">
+            <h2>01</h2>
+            <h3> Serviece One </h3>
+            <p>Detail for material</p>
+            <a target="_self" href="www.google.com">
+              Open / Enter{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="box">
+          <div className="content">
+            <h2>02</h2>
+            <h3> Serviece Two </h3>
+            <p> Detail for material </p>
+            <a target="_self" href="www.google.com">
+              Open / Enter{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="box">
+          <div className="content">
+            <h2>03</h2>
+            <h3> Serviece Three </h3>
+            <p> Detail for material </p>
+            <a target="_self" href="www.google.com">
+              Open / Enter{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="box">
+          <div className="content">
+            <h2>04</h2>
+            <h3> Serviece Four </h3>
+            <p> Detail for material </p>
+            <a target="_self" href="www.google.com">
+              Open / Enter{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+    </body>
   );
 }
 
